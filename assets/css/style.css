@@ -276,7 +276,7 @@ nav ul li.btn.hide i:before {
   background: #0070ba ;
 }
 
-.form__input:hover {
+.form__input:focus {
   border-color: #0070ba85;
 }
 
