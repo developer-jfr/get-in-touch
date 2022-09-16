@@ -247,15 +247,16 @@ nav ul li.btn.hide i:before {
 }
 
 .form__label {
-  font-size: 12px;
+  font-size: 16px;
   position: absolute;
   left: .5rem;
-  top: 0.5rem;
+  top: 1.2rem;
   padding: 0 0.5rem;
   color: #888;
   cursor: text;
   transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
   background-color: transparent;
+  z-index: -1;
 }
 
 .form-btn {
@@ -274,6 +275,17 @@ nav ul li.btn.hide i:before {
 .form-btn:hover {
   background: #0070ba ;
 }
+
+.form__input:hover {
+  border-color: #0070ba85;
+}
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: 0.5rem;
+  font-size: 12px;
+}
+
 
 
 /* ====================== Links =========================== */
